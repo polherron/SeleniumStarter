@@ -16,14 +16,6 @@ namespace SeleniumMain
 
             IWebDriver chromeDriver = GetChromeDriver();
             OpenPage(chromeDriver);
-            System.Threading.Thread.Sleep(5000);
-            CloseBrowser(chromeDriver);
-
-        }
-
-        private static void CloseBrowser(IWebDriver driver)
-        {
-            driver.Close();
         }
 
         private static IWebDriver GetChromeDriver()
