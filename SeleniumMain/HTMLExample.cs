@@ -11,7 +11,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumMain
 {
-    public class HTMLExample
+    class HTMLExample
     {
         internal static void SelectTableCell(IWebDriver driver, string webURL)
         {
@@ -60,7 +60,7 @@ namespace SeleniumMain
 
 
         //Tests Radio Buttons on TestPage.html
-        public static bool SelectOptionDDL(IWebDriver driver, string url)
+        internal static void SelectOptionDDL(IWebDriver driver, string url)
         {
             driver.Url = url;
             var checkbox = driver.FindElement(By.Id("select1"));
@@ -68,11 +68,11 @@ namespace SeleniumMain
             paulOption.Click();
             if (paulOption.Text.Equals("Paul"))
             {
-                return true;
+                Console.WriteLine("Text equals paul");
             }
             else
             {
-                return false;
+                Console.WriteLine("Text does not equal paul");
             }
 
         }
