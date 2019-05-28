@@ -13,7 +13,7 @@ namespace SeleniumMain
     {
         static void Main(string[] args)
         {
-
+            
             IWebDriver chromeDriver = GetChromeDriver();
             OpenPage(chromeDriver);
         }
