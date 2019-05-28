@@ -16,7 +16,6 @@ namespace SeleniumMain
         {
             string webURL = @"file:///C:/Users/Paul/Source/Repos/Selenium/SeleniumMain/Default.html";
             IWebDriver driver = new ChromeDriver(@"C:\libraries\");
-            string googleUrl = "https://www.google.com/";
 
             //ClickPluralsightImageExample.DoSearch(driver, googleUrl);
             HTMLExample.SelectRadioButtons(driver, webURL);
